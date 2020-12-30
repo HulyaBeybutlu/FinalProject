@@ -1,0 +1,86 @@
+@font-face {
+    font-family:"Jokerman" ;
+    src: url("/assets/fonts/Jokerman-Regular.ttf") format("ttf");
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jokerman';
+}
+#header{
+    padding-top: 20px;
+    padding-bottom: 40px;
+.nav-special{
+    ul{
+        li{
+            padding-right: 15px;
+        a{
+            color: #7209B7 !important;
+        }
+    }
+    }
+}
+.searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #7209B7;
+    border-radius: 30px;
+    padding: 10px;
+    .search_input{
+        color: white;
+        border: 0;
+        outline: 0;
+        background: none;
+        width: 0;
+        caret-color:transparent;
+        line-height: 40px;
+        transition: width 0.4s linear;
+    }
+        .search_icon{
+            height: 25px;
+            width: 25px;
+            float: right;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color:#ffff;
+            text-decoration:none;
+            margin-top: 5px;
+            }
+        &:hover .search_input{
+            padding: 0 10px;
+            width: 200px;
+            transition: width 0.4s linear;
+            caret-color:#ffff;
+        }
+        &:hover .search_icon{
+            color: white;
+        }
+    }
+}
+
+#welcome{
+    height: 100vh;
+    .welcome-left{
+        ul{
+        li{
+            padding-right: 30px;
+            padding-top: 10px;
+            &:nth-child(-n+2){
+                &::after{
+                    content: "|";
+                    padding-left:20px;
+                    color: #B7B7A4;
+                }
+            }
+       
+    }
+    }
+    }
+}
+
+
+

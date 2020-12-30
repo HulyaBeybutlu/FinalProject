@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Jokerman";
+  src: url("/assets/fonts/Jokerman-Regular.ttf") format("ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Jokerman';
+}
+
+#header {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+#header .nav-special ul li {
+  padding-right: 15px;
+}
+
+#header .nav-special ul li a {
+  color: #7209B7 !important;
+}
+
+#header .searchbar {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #7209B7;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+#header .searchbar .search_input {
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color: transparent;
+  line-height: 40px;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+}
+
+#header .searchbar .search_icon {
+  height: 25px;
+  width: 25px;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: #ffff;
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+#header .searchbar:hover .search_input {
+  padding: 0 10px;
+  width: 200px;
+  -webkit-transition: width 0.4s linear;
+  transition: width 0.4s linear;
+  caret-color: #ffff;
+}
+
+#header .searchbar:hover .search_icon {
+  color: white;
+}
+
+#welcome {
+  height: 100vh;
+}
+
+#welcome .welcome-left ul li {
+  padding-right: 30px;
+  padding-top: 10px;
+}
+
+#welcome .welcome-left ul li:nth-child(-n+2)::after {
+  content: "|";
+  padding-left: 20px;
+  color: #B7B7A4;
+}
+/*# sourceMappingURL=style.css.map */
